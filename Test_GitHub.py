@@ -2,6 +2,8 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from password import password
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
 
@@ -30,6 +32,14 @@ def new_repository():
     #Find and press new repository button
     newrep = driver.find_element(By.XPATH, '//a[@href="/new" and contains(@data-ga-click, "create new repository")]')
     newrep.click()
+
+    #Create new repository
+    element = WebDriverWait(driver, 5).until(
+        EC.presence_of_element_located((By.ID, "react-aria-2")))
+    element.send_keys("TEST")
+    create = WebDriverWait(driver, 5).until(
+        EC.presence_of_element_located((By.CLASS_NAME, "Box-sc-g0xbh4-0 kkrdEu")))
+    create.click()
     time.sleep(10)
 
     print("Test 2 Success!!!")

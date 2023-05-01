@@ -19,6 +19,7 @@ def test_Log_in():
 
     button_Sign_in = driver.find_element(By.NAME,"commit")
     button_Sign_in.click()
+    print("Test Success!!!")
 
 
     time.sleep(5)

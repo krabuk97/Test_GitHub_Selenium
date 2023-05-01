@@ -1,6 +1,7 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from password import password
 
 driver = webdriver.Chrome()
 
@@ -14,7 +15,7 @@ def test_Log_in():
 
     # Enter Login and password in empty field and press "Sign in"
     Login.send_keys("ruslancheberdin@gmail.com")
-    Password.send_keys("*******")
+    Password.send_keys(password)
 
     button_Sign_in = driver.find_element(By.NAME,"commit")
     button_Sign_in.click()

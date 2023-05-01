@@ -2,28 +2,28 @@
 Simple Test GitHub
 
 
-## Testy funkcjonalne dla strony GitHub
+## Functional Tests for GitHub Page
 
-### Test logowania
+### Login Test
 
-Test sprawdzający poprawność logowania na stronie GitHub, czyli czy użytkownik może zalogować się na swoje konto i czy wyświetla się poprawna nazwa użytkownika po zalogowaniu.
+This test verifies the correctness of the login functionality on the GitHub page, ensuring that users can successfully log into their accounts and that the correct username is displayed after logging in.
 
-### Test tworzenia repozytorium
+### Repository Creation Test
 
-Test sprawdzający, czy użytkownik może utworzyć nowe repozytorium na stronie GitHub i czy wyświetla się poprawne komunikaty po utworzeniu repozytorium.
+This test checks whether users can create a new repository on the GitHub page and whether the appropriate messages are displayed after the repository creation.
 
-### Test dodawania pliku do repozytorium
+### File Addition to Repository Test
 
-Test sprawdzający, czy użytkownik może dodać nowy plik do repozytorium na stronie GitHub i czy plik został dodany poprawnie.
+This test verifies whether users can add a new file to a repository on the GitHub page and whether the file is successfully added.
 
-### Test przeglądania repozytorium
+### Repository Browsing Test
 
-Test sprawdzający, czy użytkownik może przeglądać zawartość repozytorium na stronie GitHub, a także czy wyświetlają się poprawne informacje o repozytorium, takie jak liczba commitów, gałęzie itp.
+This test examines whether users can browse the contents of a repository on the GitHub page and whether the correct repository information, such as commit count, branches, etc., is displayed.
 
-### Test wyszukiwania repozytorium
+### Repository Search Test
 
-Test sprawdzający, czy użytkownik może wyszukać repozytorium na stronie GitHub przy użyciu różnych filtrów, takich jak język programowania, data dodania, liczba gwiazdek itp.
+This test validates whether users can search for repositories on the GitHub page using various filters, such as programming language, creation date, star count, etc.
 
-### Test wylogowywania
+### Logout Test
 
-Test sprawdzający, czy użytkownik może wylogować się ze swojego konta na stronie GitHub i czy wyświetla się poprawny komunikat po wylogowaniu.
+This test ensures that users can log out of their accounts on the GitHub page and that the appropriate logout message is displayed.

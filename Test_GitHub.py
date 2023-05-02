@@ -53,7 +53,29 @@ def new_repository():
 
     print("Test 2 Success!!!")
 
+def add_file_to_repository():
+
+    #Open page our repository
+    driver.get("https://github.com/krabuk97/TEST")
+
+    #Click on add new file
+    #new_file = WebDriverWait(driver, 5).until(
+        #EC.presence_of_element_located((By.CLASS_NAME, "dropdown-caret ml-1"))
+    #)
+    #new_file.click()
+    #ActionChains(driver).move_to_element(new_file).click().perform()
+
+    #Enter name file "Test.txt" for example and press "Commit name"
+    #name_file = WebDriverWait(driver, 10).until(
+       # EC.presence_of_element_located((By.NAME, "filename"))
+    #)
+    #name_file.send_keys("Test.txt")
+
+    print("Test 3 Success!!!")
+
+    time.sleep(5)
 
 
 test_Log_in()
 new_repository()
+add_file_to_repository()

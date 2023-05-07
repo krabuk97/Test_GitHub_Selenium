@@ -50,7 +50,7 @@ def new_repository():
     new_butt = driver.find_element(By.XPATH, "//button[@type='button' and @data-no-visuals='true']")
     new_butt.send_keys(Keys.ENTER)
     ActionChains(driver).move_to_element(new_butt).send_keys(Keys.ENTER).perform()
-
+    time.sleep(5)
     print("Test 2 Success!!!")
 
 def add_file_to_repository():
@@ -59,17 +59,21 @@ def add_file_to_repository():
     driver.get("https://github.com/krabuk97/TEST")
 
     #Click on add new file
-    #new_file = WebDriverWait(driver, 5).until(
-        #EC.presence_of_element_located((By.CLASS_NAME, "dropdown-caret ml-1"))
-    #)
-    #new_file.click()
-    #ActionChains(driver).move_to_element(new_file).click().perform()
+    file_link = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.XPATH, "//a[@data-ga-click='Empty repo, click, Clicked create new file link']"))
+    )
+    file_link.click()
 
     #Enter name file "Test.txt" for example and press "Commit name"
-    #name_file = WebDriverWait(driver, 10).until(
-       # EC.presence_of_element_located((By.NAME, "filename"))
-    #)
-    #name_file.send_keys("Test.txt")
+    name_file = WebDriverWait(driver, 10).until(
+       EC.presence_of_element_located((By.NAME, "filename"))
+    )
+    name_file.send_keys("Test.txt")
+
+    new_button = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.ID, "submit-file"))
+    )
+    new_button.click()
 
     print("Test 3 Success!!!")
 

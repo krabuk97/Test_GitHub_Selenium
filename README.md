@@ -20,10 +20,6 @@ This test verifies whether users can add a new file to a repository on the GitHu
 
 This test examines whether users can browse the contents of a repository on the GitHub page and whether the correct repository information, such as commit count, branches, etc., is displayed.
 
-### Repository Search Test
-
-This test validates whether users can search for repositories on the GitHub page using various filters, such as programming language, creation date, star count, etc.
-
 ### Logout Test
 
 This test ensures that users can log out of their accounts on the GitHub page and that the appropriate logout message is displayed.

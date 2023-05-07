@@ -25,6 +25,7 @@ def test_log_in():
 
     button_Sign_in = driver.find_element(By.NAME, "commit")
     button_Sign_in.click()
+    time.sleep(2)
     print("Test 1 Success!!!")
 
 
@@ -54,9 +55,6 @@ def new_repository():
 
 
 def add_file_to_repository():
-    # Open page our repository
-    driver.get("https://github.com/krabuk97/TEST")
-
     # Click on add new file
     file_link = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, "//a[@data-ga-click='Empty repo, click, Clicked create new file link']"))
@@ -75,13 +73,10 @@ def add_file_to_repository():
     new_button.click()
 
     print("Test 3 Success!!!")
-    time.sleep(5)
+    time.sleep(2)
 
 
 def browsing_test():
-    # Open page our repository
-    driver.get("https://github.com/krabuk97/TEST")
-
     # browse the contents of a repository on the GitHub page
     code = driver.find_element(By.ID, "code-tab")
     code.click()
@@ -117,10 +112,26 @@ def browsing_test():
 
     settings = driver.find_element(By.ID, "settings-tab")
     settings.click()
-    time.sleep(5)
+    time.sleep(2)
+    print("Test 4 Success!!!")
+
+
+def sign_out():
+    # Open menu and click on "Sign Out"
+    menu_m = driver.find_element(By.XPATH, "//summary[@aria-label='View profile and more']")
+    menu_m.click()
+    time.sleep(2)
+
+    button = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, "button.dropdown-signout"))
+    )
+    button.click()
+    time.sleep(2)
+    print("Test 5 Success!!!")
 
 
 test_log_in()
 new_repository()
 add_file_to_repository()
 browsing_test()
+sign_out()

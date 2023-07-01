@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R1</id>
+	<name>Functional Tests for GitHub Page 7/1/2023</name>
+	<description>QA_Test_GIt_Hub
+Simple Test GitHub</description>
+	<config></config>
+	<createdon>2023-07-01T20:28:30Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>5</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T1</id>
+				<title>Login Test</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>This test verifies the correctness of the login functionality on the GitHub page, ensuring that users can successfully log into their accounts and that the correct username is displayed after logging in.</preconds>
+									</custom>
+												<caseid>C1</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-07-01T20:28:40Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-07-01T20:28:30Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T2</id>
+				<title>Repository Creation Test</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>This test checks whether users can create a new repository on the GitHub page and whether the appropriate messages are displayed after the repository creation.</preconds>
+									</custom>
+												<caseid>C2</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-07-01T20:28:43Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-07-01T20:28:30Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T3</id>
+				<title>File Addition to Repository Test</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>This test verifies whether users can add a new file to a repository on the GitHub page and whether the file is successfully added.</preconds>
+									</custom>
+												<caseid>C3</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-07-01T20:28:46Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-07-01T20:28:30Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T4</id>
+				<title>Repository Browsing Test</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>This test examines whether users can browse the contents of a repository on the GitHub page and whether the correct repository information, such as commit count, branches, etc., is displayed.</preconds>
+									</custom>
+												<caseid>C4</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-07-01T20:28:48Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-07-01T20:28:30Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T5</id>
+				<title>Logout Test</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>This test ensures that users can log out of their accounts on the GitHub page and that the appropriate logout message is displayed.</preconds>
+									</custom>
+												<caseid>C5</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-07-01T20:28:51Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-07-01T20:28:30Z</createdon>
+																		<createdby>RUSLAN CHEBERDYN</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+</run>
